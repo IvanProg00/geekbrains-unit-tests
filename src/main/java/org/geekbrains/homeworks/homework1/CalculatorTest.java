@@ -1,6 +1,7 @@
 package org.geekbrains.homeworks.homework1;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class CalculatorTest {
     public static void main(String[] args) {
