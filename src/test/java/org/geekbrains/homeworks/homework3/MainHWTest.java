@@ -26,4 +26,16 @@ class MainHWTest {
     void oddNumbersReturnsFalse(int n) {
         assertFalse(mainHW.evenOddNumber(n));
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {26, 99, 27, 33, 45, 55, 66})
+    void numberInIntervalReturnsTrue(int n) {
+        assertTrue(mainHW.numberInInterval(n));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {25, 100, -25, -26, -33, -99, -100, 109, 24, 124})
+    void numberNotInIntervalReturnsFalse(int n) {
+        assertFalse(mainHW.numberInInterval(n));
+    }
 }
