@@ -1,4 +1,4 @@
-package org.geekbrains.lessons.lesson1.Calculator;
+package org.geekbrains.lessons.lesson1.calculator;
 
 public class Calculator {
     public static int calculation(int firstOperand, int secondOperand, char operator) {

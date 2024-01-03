@@ -16,6 +16,10 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 class ShopTest {
 
 
+    private final ByteArrayOutputStream output = new ByteArrayOutputStream();
+    private Shop shop;
+    private Cart cart;
+
     // Создаем набор продуктов для магазина:
     public static List<Product> getStoreItems() {
         List<Product> products = new ArrayList<>();
@@ -32,11 +36,6 @@ class ShopTest {
 
         return products;
     }
-
-    private ByteArrayOutputStream output = new ByteArrayOutputStream();
-
-    private Shop shop;
-    private Cart cart;
 
     @BeforeEach
     void setup() {
